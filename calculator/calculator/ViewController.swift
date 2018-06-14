@@ -53,16 +53,20 @@ class ViewController: UIViewController {
     }
     @IBAction func Divide(_ sender: UIButton) {
         operation(operation: .Divide)
+        display.text = "/"
     }
     @IBAction func mul(_ sender: UIButton) {
         operation(operation: .Multiply)
+        display.text = "X"
     }
     @IBAction func add(_ sender: UIButton) {
         operation(operation: .Subtract)
+        display.text = "-"
     }
     
     @IBAction func addition(_ sender: Any) {
         operation(operation: .Add)
+        display.text = "+"
     }
     @IBAction func equals(_ sender: Any) {
         operation(operation: currentoperation)
