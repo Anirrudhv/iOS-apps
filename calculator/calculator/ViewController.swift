@@ -103,7 +103,7 @@ class ViewController: UIViewController {
             result = "\(Int(Double(result)!))"
         }
         else if(Double(result)!.truncatingRemainder(dividingBy: 1) != 0){
-            var ro = round(Double(result)!*1000000)/1000000
+            let ro = round(Double(result)!*100000000)/100000000
             result = "\(ro)"
             
             }
